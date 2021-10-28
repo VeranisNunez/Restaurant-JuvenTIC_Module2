@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Contáctanos | Sal&Salsa</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/contacto.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+  </head>
+  
+  <body>
+    <div class="navbar-index">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/logo1.png">
+        </a>
+      </div>
+      <div>
+        <a href="nosotros.html" class="nav-link text-light">NOSOTROS</a>
+      </div>
+      <div>
+        <a href="menu.html" class="nav-link text-light">EL MENU</a>
+      </div>
+      <div>
+        <a href="servicios.html" class="nav-link text-light">SERVICIOS</a>
+      </div>
+      <div>
+        <a href="reservas.html" class="nav-link text-light">RESERVAS</a>
+      </div>
+      <div class="carrito">
+        <a href="carrito.html">
+          <img class="imgCar" src="../assets/carrito.svg">
+        </a>
+      </div>
+    </div>
+
+    <div class="contenedor">
+      <div class="parrafo">
+        <p class="titulo">Contáctanos</p>
+        <p>
+          Simplemente el texto de relleno de las imprentas y archivos de texto.
+          Lorem Ipsum ha sido el texto de relleno estándar de las industrias
+          desde el año 1500, cuando un impresor (N. del T. persona que se dedica
+          a la imprenta) desconocido usó una galería de textos y los mezcló de
+          tal manera que logró hacer un libro de textos especimen. <br><br>No sólo
+          sobrevivió 500 años, sino que tambien ingresó como texto de relleno en
+          documentos electrónicos, quedando esencialmente igual al original. Fue
+          popularizado en los 60s con la creación de las hojas "Letraset", las
+          cuales contenian pasajes de Lorem Ipsum, y más recientemente con
+          software de autoedición, como por ejemplo Aldus PageMaker, el cual
+          incluye versiones de Lorem Ipsum.
+        </p>
+      </div>
+      <div class="formulario">
+        <section class="form-register">
+          <form method="post" action="#">
+            <select class="controls">
+              <option selected disabled>Seleccione un valor</option>
+              <option>Celebracion de cumpleaños</option>
+              <option>Aniversarios</option>
+              <option>Fiestas infantiles</option>
+              <option>Declaraciones o propuestas</option>
+              <option>Despedidas</option>
+              <option>Cena con amigos</option>
+            </select>
+            <input
+              class="controls"
+              minlength="5"
+              maxlength="20"
+              type="text"
+              name="asunto"
+              id="nombres"
+              placeholder="Asunto"
+              required=""
+              pattern="[a-zA-Z]+"
+            />
+            <input
+              class="controls"
+              minlength="3"
+              maxlength="40"
+              type="text"
+              name="apellidos"
+              id="apellidos"
+              placeholder="Nombre Completo"
+              required=""
+              pattern="[a-zA-Z]+"
+            />
+            <input
+              class="controls"
+              minlength="5"
+              maxlength="20"
+              type="email"
+              name="correo"
+              id="correo"
+              placeholder="Correo electronico"
+              required=""
+            />
+            <textarea
+              class="controls"
+              minlength="5"
+              maxlength="50"
+              name="textoArea"
+              id="textoArea"
+              placeholder="Su mensaje"
+              required=""
+            ></textarea>
+            <input type="checkbox" name="terminos" required=""/>
+              <label for="terminos"> Acepta terminos y condiciones</label
+            >
+            <input class="botons btn-color" type="submit" value="Registrar" />
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="img-foot">
+        <img src="../assets/logo.png" alt="sal&salsa" width="320px" />
+      </div>
+
+      <div class="lista-footer">
+        <div class="datos-footer">
+          <li><a href="javascript:mostrarMapaSitio();"> MAPA DEL SITIO</a></li>
+          <li><a href="contacto.html"> CONTACTANOS</a></li>
+          <li><a href="reservas.html"> RESERVAS</a></li>
+        </div>
+
+        <div id="contactos">
+          <div class="contactos-footer">
+            <li>Restaurante Sal y Salsa Ltda.</li>
+            <li>Calle 19 No. 7 - 30, Bogotá</li>
+            <li><a href="" target="_blank">reservas@salysalsa.com</a></li>
+            <li>312 325 25 321</li>
+          </div>
+          <div class="copy">
+            <p class="m-0">&copy; 2020 all rights reserved</p>
+          </div>
+        </div>
+
+        <div id="mapasitio" style="display:none;">
+          <div class="mapa">
+            <table style="width:100%">
+              <tr>
+                <th><h4><a href="../index.html">Inicio</a></h4></th>
+                <th><h4><a href="nosotros.html">Nosotros</a></h4></th>
+                <th><h4><a href="servicios.html">Servicios</a></h4></th>
+                <th><h4><a href="menu.html">Menú</a></h4></th>
+                <th><h4><a href="reservas.html">Reservas</a></h4></th>
+              </tr>
+              <tr class="contenido">
+                <th>
+                  <ul class="list">
+                    <li>Presentación</li>
+                    <li>Propuesta</li>
+                    <li>Menús</li>
+                    <li>Eventos</li>
+                    <li>Testimonios</li>
+                  </ul>
+                </th>
+                <th>
+                  <ul class="list">
+                    <li>Historia</li>
+                    <li>Equipo</li>
+                    <li>Testimonios</li>
+                  </ul>
+                </th>
+                <th>
+                  <ul class="list">
+                    <li>Servicios</li>
+                    <li>Reservas</li>
+                  </ul>
+                </th>
+                <th>
+                  <ul class="list">
+                    <li>Platos</li>
+                    <li>Pedidos</li>
+                  </ul>
+                </th>
+                <th>
+                  <ul class="list">
+                    <li>Información</li>
+                    <li>Formulario</li>
+                  </ul>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-footer" id="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.934234432425!2d-74.07400785034109!3d4.605797243740843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a1f30307cf%3A0xf863232d4608bc5b!2zQ2wuIDE5ICM3LTMwLCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1631394323994!5m2!1ses!2sco"
+          width="400px"
+          height="240px"
+          margin-top="25px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </footer>
+
+    <script src="../js/reserva.js"></script>
+    <script src="../js/validarCarrito.js"></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+@font-face {
+    font-family:'Branding';
+    src: url('../fonts/branding-sf-cmp-bold-webfont.woff');
+}
+
+.social {
+    right: 5px;
+    top: 100px;
+    width: 2rem;
+    z-index: 100;
+    color: white;
+    position: fixed;
+    cursor: pointer;
+    margin-left: auto;
+    text-align: center;
+    background-color: #ff3c04;
+}
+
+main {
+    color: #4F2634;
+    font-family:'Branding';
+}
+
+main .row{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.buy{
+    text-align: center;
+    justify-content: center;
+}
+
+.buy a{
+    width: 255px;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    background-color: #FF3B04;
+}
+.buy:hover , .target:hover{ color: #59313c; }
+  
+.menu .price , .pay .price{
+    margin-left: auto;
+}
+
+.menus .text{
+    padding: 10px 0px;
+    text-align: justify;
+    font-family: Calibri;
+}
+
+.menu a {
+    border: none;
+    color: white;
+    background-color: #ff3c04;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+  
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+@supports(object-fit: cover) {
+    .img img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+.target{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.pay{
+    width: 70%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #dedfd9;
+}
+
+.pay button{
+    width: 100%;
+    color: white;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    background-color: #FF3B04;
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+}
+
+.valor{
+    padding: 10px;
+    line-height: 10px;
+    font-weight: bold;
+    margin: 0px 4px 0px 4px;
+    border: 1px solid #000;
+}
+
+.botones .buttonMenos{
+    padding: 10px;
+    border: none;
+    padding-right: 5px;
+    background-color: transparent;
+}
+
+.botones .buttonMas{
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.botones .btnMenos{
+    width: 13px;
+    height: 3px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.botones img{
+    width: 26px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+/* MODAL */
+
+.modal-title{
+    font-size: 2rem;
+}
+
+.modal-body{
+    font-family: Calibri;
+}
+
+.modal-footer input, .modal-footer button{
+    width: 20%;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background-color: #FF3B04;
+}
+
+/* VALIDACION */
+
+.valEmail{
+    display: none;
+    color: #f00;
+}
+.valName{
+    display: none;
+    color: #f00;
+}

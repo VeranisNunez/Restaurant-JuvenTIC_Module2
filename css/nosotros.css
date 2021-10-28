@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Branding";
+  src: url("../fonts/branding-sf-cmp-bold-webfont.woff");
+}
+
+main {
+  color: #4f2c38;
+  border: white solid 1px;
+  margin-top: 4.5rem;
+}
+
+.photo {
+  min-width: 540px;
+  min-height: 500px;
+  background: url('../assets/foto4@2x.png');
+  background-size: cover;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+}
+
+.social {
+  color: white;
+  width: 2rem;
+  text-align: center;
+  background-color: #ff3c04;
+  margin-left: auto;
+  position: fixed;
+  right: 0;
+  top: 20;
+  cursor: pointer;
+}
+
+.history .title2 {
+  color: #e3901b;
+  font-size: 2rem;
+}
+
+.title {
+  font-family: Branding;
+  font-size: 7rem;
+}
+
+.history .text {
+  text-align: justify;
+}
+
+.personal {
+  padding-bottom: 3rem;
+  text-align: center;
+  background-color: #D5CACE;
+}
+
+.personal .col-sm-4 {
+  font-family: Branding;
+}
+
+.personal img {
+  margin-bottom: 1rem;
+  padding: 4px;
+  width: 140px;
+  height: 140px;
+  border: #AFA3A6 5px solid;
+}
+
+.testimony img {
+  padding: 4px;
+  width: 140px;
+  height: 140px;
+  border: lightgray 5px solid;
+}

@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Branding";
+  src: url("../fonts/branding-sf-cmp-bold-webfont.woff");
+}
+
+.social {
+  color: white;
+  width: 2rem;
+  text-align: center;
+  background-color: #ff3c04;
+  margin-left: auto;
+  position: fixed;
+  right: 0;
+  top: 20;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 5rem;
+  text-align: center;
+  font-family: 'Calibri';
+}
+
+.container .titulo{
+  font-size: 6rem;
+  font-family: "Branding";
+  margin-bottom: 30px;
+  color: #4f2c38;
+  text-align: start;
+}
+
+.container .parrafo {
+  background: fixed;
+  text-align: justify;
+  color: #4f2c38;
+}
+
+.formulario {
+  margin-bottom: 3rem;
+}
+
+.form-register {
+  width: 450px;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.controls {
+  width: 100%;
+  background: #D6D6D6;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #4f2c38;
+  font-size: 18px;
+  color: black;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: black;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .fecha,
+.form-register .hora {
+  color: black;
+  font-size: 18px;
+  text-align: start;
+  font-family: 'Calibri';
+}
+
+.form-register .btn{
+  width: 20%;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: #FF3B04;
+}
+
+/* MODAL  */
+
+.modal-title{
+  font-size: 2rem;
+  color: #4F2634;
+  font-family: "Branding";
+}
+
+.modal-body span{
+  font-weight: normal;
+}
+
+.modal-body p{
+  color: #4F2634;
+  font-family: Calibri;
+  font-weight: bolder;
+}
+
+.modal-footer input, .modal-footer button{
+  width: 30%;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: #FF3B04;
+  font-family: "Branding";
+}
+
+
+/* VALIDACION FORMULARIO  */
+
+.valSelect{
+  display: none;
+  color: #f00;
+}
+.valName{
+  display: none;
+  color: #f00;
+}
+.valTel{
+  display: none;
+  color: #f00;
+}
+.valNumPer{
+  display: none;
+  margin-left: auto!important;
+  color: #f00;
+}
+.valEmail{
+  display: none;
+  color: #f00;
+}
+.valHora{
+  display: none;
+  color: #f00;
+}
+.valFecha{
+  display: none;
+  color: #f00;
+}
+.valCheckbox{
+  display: none;
+  color: #f00;
+  font-size: 17px!important;
+  height: 16px!important;
+}
+.rojo{
+  color: #f00;
+}

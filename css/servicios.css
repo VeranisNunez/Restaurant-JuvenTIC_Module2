@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Branding";
+  src: url("../fonts/branding-sf-cmp-bold-webfont.woff");
+}
+
+main {
+  color: #4f2c38;
+  border: white solid 1px;
+  margin-top: 4.5rem;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+}
+
+.social {
+  color: white;
+  width: 2rem;
+  text-align: center;
+  background-color: #ff3c04;
+  margin-left: auto;
+  position: fixed;
+  right: 0;
+  top: 20;
+  cursor: pointer;
+}
+
+.title {
+  font-family: Branding;
+  font-size: 6rem;
+}
+
+.information {
+  text-align: justify;
+}
+
+.services .service {
+  background-color: #e6e0e2;
+}
+
+.services h3 {
+  font-family: Branding;
+}
+
+.services p {
+  font-size: small;
+  text-align: justify;
+}
+
+.service a {
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  font-family: Branding;
+  background-color: #ff3c04;
+}
+
+.img {
+  width: 250px;
+  height: auto;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+}
+
+@supports(object-fit: cover) {
+  .img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}

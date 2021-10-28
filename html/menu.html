@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <title>Haz tu pedido | Sal&Salsa</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+    
+  </head>
+  
+  <body>
+     <div class="modall quitar"></div>
+      <div class="confirmacion quitar">
+           <h3>Añadiras a tu carrito <span class="unidades">1</span> <span class="unidadText">unidad</span></h3>
+           <h5>Total: $<span class="precio">23.000</span></h5>
+
+           <div class="btns">
+              <button class="btnCancel" onclick="quitar()">Cancelar</button>
+              <button onclick="guardar()" class="btnOk">Ok</button>
+           </div>
+      </div>
+
+    <div class="navbar-index">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/logo1.png">
+        </a>
+      </div>
+      <div>
+        <a href="nosotros.html" class="nav-link text-light">NOSOTROS</a>
+      </div>
+      <div>
+        <a href="menu.html" class="nav-link text-light">EL MENU</a>
+      </div>
+      <div>
+        <a href="servicios.html" class="nav-link text-light">SERVICIOS</a>
+      </div>
+      <div>
+        <a href="reservas.html" class="nav-link text-light">RESERVAS</a>
+      </div>
+      <div class="carrito">
+        <a href="carrito.html">
+          <img class="imgCar" src="../assets/carrito.svg">
+        </a>
+      </div>
+    </div>
+    <div class="social">
+          <div class="col py-2">
+            <a href="https://es-la.facebook.com/" target="_blank">
+              <img src="../assets/ico-facebook@2x.png" alt="img_facebook" width="12px" height="20px">
+            </a>
+          </div>
+          <div class="w-100"></div>
+          <div class="col py-2">
+            <a href="https://twitter.com/?lang=es" target="_blank">
+              <img src="../assets/ico-twitter@2x.png" alt="img_twitter" width="22px" height="20px">
+            </a>
+          </div>
+          <div class="w-100"></div>
+          <div class="col py-2">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="../assets/ico-youtube@2x.png" alt="img_youtube" width="22px" height="15px">
+            </a>
+          </div>
+    </div>
+    <div class="contenedor">
+      <p class="title">Haz tu pedido</p>
+      <div class="platos">
+
+        <div class="item">
+          <img src="../assets/menu3@2x.png">
+          <div class="descripcion">
+             <h1 class="titleItem">Lorem ipsum dolor sit amet conse.</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+             <h2 class="titlePrecio">$25.000</h2>
+          </div>
+          <div class="cantidad">
+            <h5 class="titleCant">CANTIDAD</h5>
+            <div class="botones">
+              <button onclick="restar(1)" class="buttonMenos">
+                <div class="btnMenos"></div>
+              </button>
+              <p id="valor1" class="valor">1</p>
+              <button class="buttonMas" onclick="sumar(1)">
+                <img class="imgMas" src="../assets/mas1.svg">
+              </button>
+            </div>
+            <button onclick="abrir(1)" class="btnAgregar">
+              <img src="../assets/carrito.svg">
+              <p>AÑADIR AL CARRITO</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="../assets/menu5@2x.png">
+          <div class="descripcion">
+             <h1 class="titleItem">Lorem ipsum dolor sit amet conse.</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+             <h2 class="titlePrecio">$25.000</h2>
+          </div>
+          <div class="cantidad">
+            <h5 class="titleCant">CANTIDAD</h5>
+            <div class="botones">
+              <button onclick="restar(2)" class="buttonMenos">
+                <div class="btnMenos"></div>
+              </button>
+              
+              <p id="valor2" class="valor">1</p>
+              <button class="buttonMas" onclick="sumar(2)">
+                <img class="imgMas" src="../assets/mas1.svg">
+              </button>
+            </div>
+            <button onclick="abrir(2)" id="btnAdd2" class="btnAgregar">
+              <img src="../assets/carrito.svg">
+              <p>AÑADIR AL CARRITO</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="../assets/menu6@2x.png">
+          <div class="descripcion">
+             <h1 class="titleItem">Lorem ipsum dolor sit amet conse.</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+             <h2 class="titlePrecio">$25.000</h2>
+          </div>
+          <div class="cantidad">
+            <h5 class="titleCant">CANTIDAD</h5>
+            <div class="botones">
+              <button onclick="restar(3)" class="buttonMenos">
+                <div class="btnMenos"></div>
+              </button>
+              <p id="valor3" class="valor">1</p>
+              <button class="buttonMas" onclick="sumar(3)">
+                <img id="btnMas4" class="imgMas" src="../assets/mas1.svg">
+              </button>
+            </div>
+            <button onclick="abrir(3)" id="btnAdd3" class="btnAgregar">
+              <img src="../assets/carrito.svg">
+              <p>AÑADIR AL CARRITO</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="../assets/menu9@2x.jpeg">
+          <div class="descripcion">
+             <h1 class="titleItem">Lorem ipsum dolor sit amet conse.</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+             <h2 class="titlePrecio">$25.000</h2>
+          </div>
+          <div class="cantidad">
+            <h5 class="titleCant">CANTIDAD</h5>
+            <div class="botones">
+              <button onclick="restar(4)" class="buttonMenos">
+                <div class="btnMenos"></div>
+              </button>
+              <p id="valor4" class="valor">1</p>
+              <button class="buttonMas" onclick="sumar(4)">
+                <img id="btnMas4" class="imgMas" src="../assets/mas1.svg">
+              </button>
+            </div>
+            <button onclick="abrir(4)" id="btnAdd4" class="btnAgregar">
+              <img src="../assets/carrito.svg">
+              <p>AÑADIR AL CARRITO</p>
+            </button>
+          </div>
+        </div>
+       
+        <div class="item">
+          <img src="../assets/menu4@2x.png">
+          <div class="descripcion">
+             <h1 class="titleItem">Lorem ipsum dolor sit amet conse.</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+             <h2 class="titlePrecio">$25.000</h2>
+          </div>
+          <div class="cantidad">
+            <h5 class="titleCant">CANTIDAD</h5>
+            <div class="botones">
+              <button onclick="restar(5)" id="btnMenos5" class="buttonMenos">
+                <div class="btnMenos"></div>
+              </button>
+              <p id="valor5" class="valor">1</p>
+              <button onclick="sumar(5)" class="buttonMas">
+                <img class="imgMas" src="../assets/mas1.svg">
+              </button>
+            </div>
+            <button onclick="abrir(5)" class="btnAgregar">
+              <img src="../assets/carrito.svg">
+              <p>AÑADIR AL CARRITO</p>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="img-foot">
+        <img src="../assets/logo.png" alt="sal&salsa" width="320px" />
+      </div>
+
+      <div class="lista-footer">
+        <div class="datos-footer">
+          <li><a id="link-mapasitio" href="#"> MAPA DEL SITIO</a></li>
+          <li><a href="contacto.html"> CONTACTANOS</a></li>
+          <li><a href="reservas.html"> RESERVAS</a></li>
+        </div>
+
+        <div id="contactos">
+          <div class="contactos-footer">
+            <li>Restaurante Sal y Salsa Ltda.</li>
+            <li>Calle 19 No. 7 - 30, Bogotá</li>
+            <li><a href="" target="_blank">reservas@salysalsa.com</a></li>
+            <li>312 325 25 321</li>
+          </div>
+          <div class="copy">
+            <p class="m-0">&copy; 2020 all rights reserved</p>
+          </div>
+        </div>
+
+        <div id="mapasitio" style="display:none;">
+          <div class="mapa">
+            <table style="width:100%">
+              <tr>
+                <th><h4><a href="../index.html">Inicio</a></h4></th>
+                <th><h4><a href="nosotros.html">Nosotros</a></h4></th>
+                <th><h4><a href="servicios.html">Servicios</a></h4></th>
+                <th><h4><a href="menu.html">Menú</a></h4></th>
+                <th><h4><a href="reservas.html">Reservas</a></h4></th>
+              </tr>
+              <tr class="contenido">
+                <th>
+                  <ul class="list">
+                    <li>Presentación</li>
+                    <li>Propuesta</li>
+                    <li>Menús</li>
+                    <li>Eventos</li>
+                    <li>Testimonios</li>
+                  </ul>
+                </th>
+                <th>
+                  <ul class="list">
+                    <li>Historia</li>
+                    <li>Equipo</li>
+                    <li>Testimonios</li>
+                  </ul>
+                </th>
+                <th>
+                  <ul class="list">
+                    <li>Servicios</li>
+                    <li>Reservas</li>
+                  </ul>
+                </th>
+                <th>
+                  <ul class="list">
+                    <li>Platos</li>
+                    <li>Pedidos</li>
+                  </ul>
+                </th>
+                <th>
+                  <ul class="list">
+                    <li>Información</li>
+                    <li>Formulario</li>
+                  </ul>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-footer" id="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.934234432425!2d-74.07400785034109!3d4.605797243740843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a1f30307cf%3A0xf863232d4608bc5b!2zQ2wuIDE5ICM3LTMwLCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1631394323994!5m2!1ses!2sco"
+          width="400px"
+          height="240px"
+          margin-top="25px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </footer>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/pagar.js"></script>
+  </body>
+</html>
